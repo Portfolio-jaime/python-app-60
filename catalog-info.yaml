@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: python-app-60
+  description: test
+  annotations:
+    github.com/project-slug: Portfolio-jaime/python-app-60
+    backstage.io/techdocs-ref: dir:.
+    argocd/app-name: python-app-60
+    # Kubernetes annotations for linking to cluster resources
+    backstage.io/kubernetes-id: python-app-60
+    backstage.io/kubernetes-namespace: default
+  labels:
+    environment: development
+    language: python
+    deployment-type: kubernetes
+    ci-cd: argocd
+  tags:
+    - python
+    - service
+    - kubernetes
+    - argocd
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
