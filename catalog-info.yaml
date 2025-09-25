@@ -9,7 +9,7 @@ metadata:
     argocd/app-name: python-app-60
     # Kubernetes annotations for linking to cluster resources
     backstage.io/kubernetes-id: python-app-60
-    backstage.io/kubernetes-namespace: default
+    backstage.io/kubernetes-namespace: dev1
   labels:
     environment: development
     language: python
